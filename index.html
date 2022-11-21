@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/33ad61f599.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <title>Volando</title>
+</head>
+
+<body>
+    <header id="Home">
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img class="logo" src="img/volando-logo-removebg-preview.png" alt="Logo Volando">
+            </div>
+            <div class="navbar-links">
+                <i class="toggle-btn fa-solid fa-bars"></i>
+                <div class="links">
+                    <i class="cross fa-solid fa-circle-xmark"></i>
+                    <ul>
+                        <li><a class="links-a" href="#Home">Inicio</a></li>
+                        <li><a class="links-a" href="#Products">Productos</a></li>
+                        <li><a class="links-a" href="#Contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section-hero">
+        <i class="arrow arrowleft fa-solid fa-chevron-left"></i>
+        <div class="carrousel">
+        </div>
+        <i class="arrow arrowright fa-solid fa-chevron-right"></i>
+    </section>
+    <section>
+        <div class="carrito-btn">
+            <p class="amount"></p>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="carrito">
+            <div class="carrito-text">
+                <i class="cross-carrito fa-solid fa-circle-xmark"></i>
+                <p>Mi Carrito</p>
+            </div>
+            <div class="container-cards-products">
+                <!-- <div class="card-product">
+                    <div class="card-product-img">
+                        <img src="img/Chivalry.webp" alt="">
+                    </div>
+                    <div class="card-product-text">
+                        <h4>The elder scroll v: skyrim</h4>
+                        <span>Price: $55</span>
+                    </div>
+                    <div class="card-product-trash">
+                        <i class="trash fa-regular fa-trash-can"></i>
+                    </div>
+                </div> -->
+            </div>
+            <div class="div-total">
+                <h5>Precio Total: $<span class="total"></span></h5>
+            </div>
+            <div class="carrito-comprar enable">Comprar</div>
+        </div>
+    </section>
+
+    <section id="Products">
+        <h2>Juegos Destacados</h2>
+        <div class="destacados">
+<!--             <div class="div-destacado">
+                <div class="destacado-img">
+                    <span>Altos Requisitos</span>
+                </div>
+                <div class="destacado-name">
+                    <h3><a href="#">Elden Ring</a></h3>
+                    <p>$${price}</p>
+                    <p>Comprar</p>
+                </div>
+            </div> -->
+        </div>
+
+        <h2>Todos los Juegos</h2>
+        <div class="container-filters">
+            <div class="filter-btn" data-genre="Aventura">Aventura</div>
+            <div class="filter-btn" data-genre="Accion">Accion</div>
+            <div class="filter-btn" data-genre="Mundo Abierto">Mundo Abierto</div>
+            <div class="filter-btn" data-genre="Deportes">Deportes</div>
+            <div class="filter-btn" data-genre="Terror">Terror</div>
+            <div class="filter-btn" data-genre="Online">Online</div>
+            <div class="filter-btn" data-genre="First Person Shooter">FPS</div>
+        </div>
+        <div class="container-games">
+<!--             <div class="div-game">
+                <div class="game-img">
+                    <span>Altos Requisitos</span>
+                </div>
+                <div class="game-name">
+                    <h3><a href="#">Elden Ring</a></h3>
+                    <p>$${price}</p>
+                    <p>Comprar</p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <footer id="Contact">
+        <div class="footer-content">
+            <div class="footer-contact">
+                <a href="https://github.com/AmicucciStefano" target="_blank"><i class="icons fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/amicuccistefano/" target="_blank"><i class="icons fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="icons fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="icons fa-solid fa-at"></i></a>
+            </div>
+            <div class="footer-text">
+                <p>Volando.COM</p>
+                <p>Buenos Aires, Argentina</p>
+                <p><a href="#">Politicas de Privacidad</a></p>
+                <p><a href="#">Terminos y condiciones</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script type="module" src="index.js" defer></script>
+<script type="module" src="JS/carrousel.js"></script>
+<script src="JS/btnsToggle.js"></script>
+<script type="module" src="JS/carrito.js"></script>
+<script type="module" src="JS/filter.js"></script>
+<script type="module" src="JS/render.js"></script>
+</html>
