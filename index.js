@@ -2,7 +2,7 @@ export const data = [
     {
         id:1,
         name:"The Elder Scrolls V: Skyrim",
-        img:"./img/skyrim.webp",
+        img:"./img/Skyrim.webp",
         carrousel:"./img/carrousel/skyrim.jpg",
         description:"The Elder Scrolls V: Skyrim es un ARPG del tipo mundo abierto, Skyrim es la quinta entrega de la serie The Elder Scrolls de videojuegos de acción y fantasía.",
         price:"20",
