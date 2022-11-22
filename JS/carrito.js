@@ -24,11 +24,13 @@ const toggleCarrito = () => {
         carrito.style.animation ="slideRightOver 0.8s"
         isCartOpen = false
         carrito.classList.remove("show-carrito")
+        noScrollCart()
         return
     } else 
     carrito.classList.add("show-carrito")
     isCartOpen = true
     carrito.style.animation =""
+    noScrollCart()
 }
 
 const disableBtn = (btn) => {
@@ -61,8 +63,8 @@ const renderCartProduct = (cartProduct) => {
             <h4>${name}</h4>
             <span>Precio: $${price}</span>
         </div>
-        <div class="card-product-trash">
-            <i class="trash fa-regular fa-trash-can" data-id="${id}"></i>
+        <div class="card-product-trash" data-id="${id}">
+            <i class="trash fa-regular fa-trash-can"></i>
         </div>
     </div>
     `
@@ -150,7 +152,7 @@ const handleDeleteBtn = (id) => {
 };
 
 const deleteProduct = (e) => {
-    if(!e.target.classList.contains("trash")) return;
+    if(!e.target.classList.contains("card-product-trash")) return;
     const id = e.target.dataset.id;
     handleDeleteBtn(id)
 }
@@ -170,6 +172,15 @@ const emptyCart = (e) => {
         return;
     }
 };
+
+const noScrollCart = () => {
+    if(carrito.classList.contains("show-carrito")) {
+        body.style.overflow = "hidden";  
+    } else {
+        body.style.overflow = "auto";
+    }
+    return
+}
 
 const init = () => {
     carritoComprar.addEventListener("click", emptyCart)

@@ -105,9 +105,8 @@ img {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    display: block;
     opacity: 1;
-    position: fixed;
+    position: absolute;
     bottom:100%;
     left: 0;
 }
@@ -313,7 +312,6 @@ img {
     background-color: var(--red);
     width: 100%;
     height: 100%;
-    display: block;
     opacity: 1;
     position: fixed;
     top:0;
@@ -489,9 +487,15 @@ img {
 }
 
 .card-product-trash {
+    width: 30px;
     margin-left: 15px;
     display: inline-block;
     align-items: flex-end;
+    cursor: pointer;
+}
+
+.card-product-trash * {
+    pointer-events: none;
 }
 
 #quantity {
@@ -511,7 +515,6 @@ img {
 
 .trash {
     margin-top: 10px;
-    cursor: pointer;
     font-size: 20px;
     height: 20px;
     width: 100%;
@@ -727,6 +730,26 @@ h2 {
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-weight: 600;
+}
+
+.slide-to-top {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-size: 26px;
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+.slide-to-top * {
+    pointer-events: none;
+}
+
+.slide-to-top p {
+    color: var(--blue);
 }
 
 /* Footer */
