@@ -771,10 +771,11 @@ footer {
 
 .footer-text a {
     color: var(--blue);
+    transition: 0.5s;
 }
 
 .footer-text a:Hover {
-    color: var(--orange);
+    var(--orange);
 }
 
 .footer-contact {
@@ -788,10 +789,11 @@ footer {
 .icons {
     transition: 0.5s;
     cursor: pointer;
+    color: var(--blue);
 }
 
 .icons:hover {
-    color: var(--blue);
+    color: var(--orange);
 }
 
 @media(min-width:600px) {
